@@ -1,0 +1,74 @@
+body {
+	font-family: Comic Sans MS;
+	background-image: url(images/fon.png); 
+	margin: -15px;
+	overflow-x: hidden;
+}
+
+a.text:active,
+a.text {
+	text-decoration: none;
+	color: black;
+}
+
+a.text:hover {
+	text-decoration: none;
+	color: white;
+}
+
+li {
+	content: "";
+	display: inline-block;
+	border: 1px solid black;
+	padding: 4px;
+	margin: 2px;
+	font-size: 30px;
+	border-left: 1px;
+	color: black;
+}
+
+ul li:first-child {
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	border-left: 1px solid black;
+}
+
+ul li:nth-child(5) {
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+ul li:last-child {
+	position: relative;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	border-left: 1px solid black;
+	left: 21%;
+}
+
+li:hover {
+	background: orange;
+	color: white;
+}
+
+.p1 {
+	border: 1px solid black;
+	/*width: 400px;
+	height: 400px;*/
+	/*background-image: url(https://static.tildacdn.com/tild6266-3862-4532-a563-386439636565/notes-clipart-yellow.png);*/
+	transform: rotate(-15deg);
+	/*float: left;*/
+	display: inline-block;
+	vertical-align: top;
+	width: 17%;
+	margin: 3% 3.4%;
+	background-color: rgb(255, 250, 240);
+}
+
+.p11 {
+	width: 80%;
+	padding: 5% 10%;
+	padding-bottom: 1%;
+}

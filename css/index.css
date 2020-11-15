@@ -1,0 +1,58 @@
+.flag {
+	background-image: url(images/header2.jpg);
+	background-size: 100% 220px;
+}
+
+.header {
+	padding-left: 32.5%;
+	height: 220px; 
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.class,
+.news {
+	float: left;
+	padding: 0 1%;
+}
+
+.class {
+	width: 63%;
+}
+
+.news {
+	width: 33%;
+}
+
+/*.class {
+	position: relative;
+	width: 60%;
+	top: 15px;
+	left: 10px;
+}
+
+.news {
+	position: relative;
+	width: 30%; 
+	top: 30%;
+  	transform: rotate(-15deg);
+}
+*/
+.header-news {
+	font-size: 300%;
+	position: relative;
+	top: -510px;
+	left: 270px;
+}
+
+.list_news {
+	position: relative;
+	top: -330px;
+	left: 15px;
+}
+
+.hr {
+	position: relative;
+	top: -330px;
+	border-top: 1px solid black;
+}
