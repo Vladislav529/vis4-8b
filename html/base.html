@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/{% block css_file %}{% endblock %}">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    {% block index_body %}{% endblock %}
+    <ul align="center">
+        <li><a href="/" class="text"><b>Главная</b></a>
+        </li><li><a href="/class" class="text"><b>Наш класс</b></a>
+        </li><li><a href="/gramoty" class="text"><b>Наши достижения</b></a>
+        </li><li><a href="/foto" class="text"><b>Фотоальбом</b></a>
+        </li><li><a href="/lessons" class="text"><b>Расписание</b></a>
+        {% if current_user.is_anonymous %}
+            </li><li><a href="/login" class="text"><b>Войти</b></a></li>
+        {% else %}
+            </li><li><a href="/logout" class="text"><b>Выйти</b></a></li>
+        {% endif %}
+    </ul>
+    {% block body %}{% endblock %}
+</body>
+</html>

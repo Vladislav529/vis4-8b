@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Наш класс</title>
+	<link rel="stylesheet" type="text/css" href="css/myclass.css">
+</head>
+<body>
+	<ul align="center">
+        <li><a href="/" class="text"><b>Главная</b></a>
+        </li><li><a href="/class" class="text"><b>Наш класс</b></a>
+        </li><li><a href="/gramoty" class="text"><b>Наши достижения</b></a>
+        </li><li><a href="/foto" class="text"><b>Фотоальбом</b></a>
+        </li><li><a href="/lessons" class="text"><b>Расписание</b></a>
+        {% if current_user.is_anonymous %}
+            </li><li><a href="/login" class="text"><b>Войти</b></a></li>
+        {% else %}
+            </li><li><a href="/logout" class="text"><b>Выйти</b></a></li>
+        {% endif %}
+    </ul>
+	<div>
+		<div class="p1">
+			<img src="css/images/dorohin.jpg" class="p11">
+			<h1 align="center">Макс Дорохин</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/drujinin.jpg" class="p11">
+			<h1 align="center">Лёша Дружинин</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/jarov.jpg" class="p11">
+			<h1 align="center">Даня Жаров</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/jdanova.jpg" class="p11">
+			<h1 align="center">Вика Жданова</h1>
+		</div>
+	</div>
+	<div>
+		<div class="p1">
+			<img src="css/images/zaharova.jpg" class="p11">
+			<h1 align="center">Юля Захарова</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/zolotenkova.jpg" class="p11">
+			<h1 align="center">Альбина Золотёнкова</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/zubacheva.jpg" class="p11">
+			<h1 align="center">Ксюша Зубачёва</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/kosmacheva.jpg" class="p11">
+			<h1 align="center">Вика Космачёва</h1>
+		</div>
+	</div>
+	<div>
+		<div class="p1">
+			<img src="css/images/lalaev.jpg" class="p11">
+			<h1 align="center">Боря Лалаев</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/lobanova.jpg" class="p11">
+			<h1 align="center">Маша Лобанова</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/maleva.jpg" class="p11">
+			<h1 align="center">Полина Малёва</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/maslova.jpg" class="p11">
+			<h1 align="center">Даша Маслова</h1>
+		</div>
+	</div>
+	<div>
+		<div class="p1">
+			<img src="css/images/nenilin.jpg" class="p11">
+			<h1 align="center">Жора Ненилин</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/nesteruk.jpg" class="p11">
+			<h1 align="center">Илья Нестерук</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/osipov.jpg" class="p11">
+			<h1 align="center">Влад Осипов</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/prokofev.jpg" class="p11">
+			<h1 align="center">Стёпа Прокофьев</h1>
+		</div>
+	</div>
+	<div>
+		<div class="p1">
+			<img src="css/images/rogulskii.jpg" class="p11">
+			<h1 align="center">Дима Рогульский</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/rumyanceva.jpg" class="p11">
+			<h1 align="center">Катя Румянцева</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/savchenko.jpg" class="p11">
+			<h1 align="center">Полина Савченко</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/sazonov.jpg" class="p11">
+			<h1 align="center">Лёня Сазонов</h1>
+		</div>
+	</div>
+	<div>
+		<div class="p1">
+			<img src="css/images/sidorov.jpg" class="p11">
+			<h1 align="center">Андрей Сидоров</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/sokolov.jpg" class="p11">
+			<h1 align="center">Артём Соколов</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/surenkova.jpg" class="p11">
+			<h1 align="center">Кристина Суренкова</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/no_foto.png" class="p11">
+			<h1 align="center">Тесля Костя</h1>
+		</div>
+	</div>
+	<div>
+		<div class="p1">
+			<img src="css/images/tuktin.jpg" class="p11">
+			<h1 align="center">Макс Туктин</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/ulyuk.jpg" class="p11">
+			<h1 align="center">Саня Ульюк</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/fomina.jpg" class="p11">
+			<h1 align="center">Лиза Фомина</h1>
+		</div>
+		<div class="p1">
+			<img src="css/images/shikov.jpg" class="p11">
+			<h1 align="center">Илья Шиков</h1>
+		</div>
+	</div>
+</body>
+</html>

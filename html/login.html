@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block css_file %}
+login.css
+{% endblock %}
+
+{% block title %}
+Вход
+{% endblock %}
+
+{% block body %}
+    <div class="list">
+        <img src="https://static.tildacdn.com/tild6266-3862-4532-a563-386439636565/notes-clipart-yellow.png" height="100%" width="100%">
+        <div class="list_content">
+            <h1 align="center">Войти</h1>
+            <hr width="80%">
+            <form action="" method="post" novalidate>
+                {{ form.hidden_tag() }}
+                <p>
+                    {{ form.username.label }}<br>
+                    {{ form.username(size=32) }}
+                </p>
+                <p>
+                    {{ form.password.label }}<br>
+                    {{ form.password(size=32) }}
+                </p>
+                <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+                {{ form.recaptcha }}
+                {% for error in form.recaptcha.errors %}
+                    <span style="color: red;">Заполните Captcha!</span>
+                {% endfor %}
+                <p>{{ form.submit() }}</p>
+                <a href="/register"><p>У вас нет аккаунта? Зарегистрируйтесь!</p></a>
+                <a href="/reset_password"><p>Забыли пароль?</p></a> 
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Обновление новости</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-5">
+    <h1>Редактирование статьи</h1>
+    <form method="post">
+        <input type="text" name="title" class="form-control" value="{{ red_news.title }}" placeholder="Введите название статьи"><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Введите основной текст">{{ red_news.text }}</textarea><br>
+        <input type="submit" class="btn btn-success" value="Обновить">
+    </form>
+</div>
+</body>
+</html>
